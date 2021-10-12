@@ -1,0 +1,103 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #d49b9b; }
+
+#Layer_7 {
+  width: 350px;
+  height: 450px; }
+
+#Layer_7:hover {
+  animation-duration: 2s;
+  animation-name: animateLogo;
+  -o-animation-iteration-count: infinite;
+  -o-animation-direction: alternate; }
+
+@keyframes animateLogo {
+  100% {
+    transform: rotate(360deg); } }
+.cls-3:hover {
+  animation-duration: 1s;
+  animation-name: moveEar;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; }
+
+@keyframes moveEar {
+  100% {
+    transform: rotate(2deg); } }
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/* The actual popup */
+.popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 37px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 500px;
+  top: 100px;
+  margin-left: -80px; }
+
+.popuptext p {
+  position: absolute;
+  top: 10px;
+  margin: 0; }
+
+/* Popup arrow */
+.popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -66px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent; }
+
+/* Toggle this class - hide and show the popup */
+.show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 3s; }
+
+/* Add animation (fade in the popup) */
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.game {
+  visibility: hidden;
+  display: flex;
+  position: absolute;
+  left: 35%;
+  bottom: 10%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  background-color: #222222; }
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 300px; }
+
+/*# sourceMappingURL=styles.css.map */
