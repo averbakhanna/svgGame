@@ -109,7 +109,9 @@ document.addEventListener('DOMContentLoaded', () => {
     cardsChosenId = []
     resultDisplay.textContent = cardsWon.length
     if  (cardsWon.length === cardArray.length/2) {
-      resultDisplay.textContent = 'Congratulations! You found them all!'
+      // resultDisplay.textContent = 'Congratulations! You found them all!'
+      document.querySelector('.gj').style.visibility = 'visible'
+      document.querySelector('#Layer_7').style.visibility = 'hidden'
     }
   }
 
